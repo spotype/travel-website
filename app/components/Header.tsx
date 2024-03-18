@@ -12,10 +12,27 @@ export default function Header() {
           <div className="">
             <h1 className="font-bold text-2xl">Explore</h1>
           </div>
-          <div>
+
+          <div className="hidden md:block md:flex md:items-center md:font-bold md:gap-3">
+            <Link href={"/"}>Home</Link>
+            <Link href={"/"}>Tours</Link>
+            <Link href={"/"}>Hotel</Link>
+            <Link href={"/"}>Gallery</Link>
+            <Link href={"/"}>Pages</Link>
+            <Link href={"/"}>Blog</Link>
+            <Link href={"/"}>Contact</Link>
+            <Link href={"/"}>Login</Link>
+            <Link
+              href={"/"}
+              className="bg-yellow-300 py-2 px-6 text-md font-bold rounded-xl"
+            >
+              Sign UP
+            </Link>
+          </div>
+          <div className="  md:hidden">
             <button
               onClick={() => setDrop(!drop)}
-              className="flex items-center justify-center"
+              className="flex items-center justify-center md:hidden"
             >
               <Bars3BottomRightIcon width={40} />
             </button>
@@ -26,8 +43,8 @@ export default function Header() {
       <div
         className={
           drop
-            ? `absolute w-full bg-white text-center py-10 rounded-2xl transition-all duration-500 top-28 -z-10 shadows`
-            : `absolute w-full bg-white text-center py-10 rounded-2xl transition-all duration-500 -top-[30rem] -z-10`
+            ? `absolute w-full bg-white text-center py-10 rounded-2xl transition-all duration-500 top-28 -z-10 shadows md:hidden`
+            : `absolute w-full bg-white text-center py-10 rounded-2xl transition-all duration-500 -top-[30rem] -z-10 md:hidden`
         }
       >
         <div className="flex flex-col gap-5 font-bold items-center">
