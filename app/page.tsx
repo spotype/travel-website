@@ -3,7 +3,7 @@ import { poppins } from "./layout";
 export default function Home() {
   return (
     <main className="cover flex items-center justify-center">
-      <div className="mx-auto flex w-11/12 items-center justify-center">
+      <div className="mx-auto flex w-11/12 items-center justify-center 2xl:w-[1250px]">
         <div>
           <div className="text-center">
             <h1
