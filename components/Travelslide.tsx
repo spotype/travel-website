@@ -24,7 +24,7 @@ export default function Travelslide() {
               className={
                 hotel
                   ? "bg-yellow-400 size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out"
-                  : "bg-white size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out"
+                  : "bg-white size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out hover:bg-yellow-400"
               }
             >
               <School size={40} color="black" />
@@ -34,7 +34,7 @@ export default function Travelslide() {
               className={
                 plane
                   ? "bg-yellow-400 size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out"
-                  : "bg-white size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out"
+                  : "bg-white size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out hover:bg-yellow-400"
               }
             >
               <Plane size={40} color="black" />
@@ -44,7 +44,7 @@ export default function Travelslide() {
               className={
                 car
                   ? "bg-yellow-400 size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out"
-                  : "bg-white size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out"
+                  : "bg-white size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out hover:bg-yellow-400"
               }
             >
               <Car size={40} color="black" />
@@ -54,7 +54,7 @@ export default function Travelslide() {
               className={
                 ship
                   ? "bg-yellow-400 size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out"
-                  : "bg-white size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out"
+                  : "bg-white size-14 flex items-center justify-center rounded-xl transition-all duration-300 ease-in-out hover:bg-yellow-400"
               }
             >
               <Ship size={40} color="black" />
