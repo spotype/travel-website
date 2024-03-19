@@ -1,4 +1,5 @@
 import getAllPost from "@/lib/getAllPost";
+import Image from "next/image";
 import Link from "next/link";
 
 export default async function page() {
@@ -10,13 +11,15 @@ export default async function page() {
         <div className="grid gap-8 sm:grid-cols-2 2xl:grid-cols-4 lg:grid-cols-3">
           {post.products.map(function (res: any) {
             return (
-              <Link href={`${res.id}`} key={res.id}>
+              <Link href={`/blog/${res.id}`} key={res.id}>
                 <div
                   key={res.id}
                   className="w-72 p-4 bg-white shadow-lg rounded-xl"
                 >
-                  <img
-                    src={`${res.thumbnail}`}
+                  <Image
+                    src={res.thumbnail}
+                    width={500}
+                    height={500}
                     className="w-full h-44 object-cover object-center"
                     alt="product image"
                   />
