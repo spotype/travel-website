@@ -10,7 +10,7 @@ export default function Home() {
               <h1
                 className={`${poppins.className} font-bold text-cyan-50 text-5xl shadow-2xl xl:text-6xl`}
               >
-                It's a Big World Out There, Go Explore
+                It&apos;s a Big World Out There, Go Explore
               </h1>
               <p className="mt-4 text-gray-100">
                 Conveniently customize proactive web services for leveraged
