@@ -1,4 +1,5 @@
 import getPost from "@/lib/getPost";
+import Image from "next/image";
 
 interface Pages {
   params: {
@@ -7,13 +8,14 @@ interface Pages {
   };
   // other properties if needed
 }
+
 export default async function page(pages: Pages) {
   const { slug }: { slug: number } = pages.params;
   const post = await getPost(slug);
   return (
     <div className="py-5">
       <div className="flex w-3/4 mx-auto flex-col">
-        <img
+        <Image
           src={post.thumbnail}
           width={500}
           height={500}
